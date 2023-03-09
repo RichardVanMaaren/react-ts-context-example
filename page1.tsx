@@ -1,14 +1,19 @@
 import React, { useContext } from 'react';
 import UserContext from './context';
-import {SecondContext} from './context';
+
 
 const Page1 = () => {
-  const [context, setContext] = useContext(UserContext);
-  const [context2, setContext2] = useContext(SecondContext);
+  const {context, setContext, context2, setContext2} = useContext(UserContext);
+  
   return (
     <html>
       page1 {context} <p/>
+      {context2}<p/>
       <button onClick={() => setContext('New Value')}>
+        Change Context Value
+      </button>
+      <p/>
+      <button onClick={() => setContext2('New Value 2')}>
         Change Context Value
       </button>
     </html>

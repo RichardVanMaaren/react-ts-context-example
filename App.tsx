@@ -7,6 +7,7 @@ import UserContext from './context';
 
 function App() {
   const [context, setContext] = useState('start');
+  const [context2, setContext2] = useState('twee');
 
   return (
     <div>
@@ -19,7 +20,7 @@ function App() {
           <Route
             path="Page1"
             element={
-              <UserContext.Provider value={[context, setContext]}>
+              <UserContext.Provider value={{context, setContext,context2,setContext2}}>
                 <Page1 />
               </UserContext.Provider>
             }
