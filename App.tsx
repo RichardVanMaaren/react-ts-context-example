@@ -6,8 +6,8 @@ import Page2 from './page2';
 import UserContext from './context';
 
 function App() {
-  const [context, setContext] = useState('een');
-  const [context2, setContext2] = useState('twee');
+  const [context, setContext] = useState('initial een');
+  const [context2, setContext2] = useState('initial twee');
 
   return (
     <div>
