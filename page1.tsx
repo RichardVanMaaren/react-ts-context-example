@@ -7,7 +7,7 @@ const Page1 = () => {
   
   return (
     <html>
-      page1 {context} <p/>
+      page1 <br/> {context} <p/>
       {context2}<p/>
       <button onClick={() => setContext('New Value')}>
         Change Context 1

@@ -6,14 +6,14 @@ import Page2 from './page2';
 import UserContext from './context';
 
 function App() {
-  const [context, setContext] = useState('start');
+  const [context, setContext] = useState('een');
   const [context2, setContext2] = useState('twee');
 
   return (
     <div>
       <BrowserRouter>
         <div>
-          <Link to="Page1">Page1</Link>
+          <Link to="Page1">Page1</Link> <br/>
           <Link to="Page2">Page2</Link>
         </div>
         <Routes>
