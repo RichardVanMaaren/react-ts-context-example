@@ -10,11 +10,11 @@ const Page1 = () => {
       page1 {context} <p/>
       {context2}<p/>
       <button onClick={() => setContext('New Value')}>
-        Change Context Value
+        Change Context 1
       </button>
       <p/>
       <button onClick={() => setContext2('New Value 2')}>
-        Change Context Value
+        Change Context 2
       </button>
     </html>
   );
