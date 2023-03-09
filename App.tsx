@@ -6,7 +6,7 @@ import Page2 from './page2';
 import UserContext from './context';
 
 function App() {
-  const [context, setContext] = useState('default context value');
+  const [context, setContext] = useState('start');
 
   return (
     <div>
