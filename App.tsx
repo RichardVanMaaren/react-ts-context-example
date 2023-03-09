@@ -28,7 +28,16 @@ function App() {
           <Route
             path="Page2"
             element={
-              <UserContext.Provider value={[context, setContext]}>
+              <UserContext.Provider value={{context, setContext,context2,setContext2}}>
+                <Page2 />
+              </UserContext.Provider>
+            }
+          />
+
+           <Route
+            path="/"
+            element={
+              <UserContext.Provider value={{context, setContext,context2,setContext2}}>
                 <Page2 />
               </UserContext.Provider>
             }
